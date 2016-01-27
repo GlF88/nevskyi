@@ -1,0 +1,54 @@
+
+.jq-selectbox { border: 2px solid white; width: 100%; padding: 10px; color: white; text-transform: uppercase; height: 19px; }
+.jq-selectbox.opened { }
+.jq-selectbox ul	{ border: 2px solid white; background: rgba(29, 72, 147, 0.94);  color: white; min-width: 96px; max-width: 200px; margin-top: 10px; }
+.jq-selectbox li { padding: 5px; }
+.jq-selectbox li:hover {background: rgba(29, 61, 121, 0.94); cursor: pointer; }
+.jq-selectbox.dropdown { width: 100%; position: absolute; }
+.jq-selectbox__trigger { 
+	background-color: white;
+	width: 30px;
+	height: 30px;
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	border-radius: 5px; 
+	cursor: pointer; 
+	margin-top: -5px; 
+	margin-right: -5px; 
+	background-image: url(../images/calendar.jpg);
+	background-repeat:no-repeat;
+	background-position: center center;
+}
+
+.people  .jq-selectbox__trigger  {
+	background-image: url(../images/arrow.jpg);
+}
+/*
+.jq-selectbox.dropup	выпадающий список селекта раскрыт вверх
+.jq-selectbox.dropdown	выпадающий список селекта раскрыт вниз
+.jq-selectbox.changed	выбрано значение, отличное от заданного по умолчанию
+.jq-selectbox__select	селект в свернутом состоянии
+.focused .jq-selectbox__select	фокус на селекте, когда нажата клавиша Tab
+.disabled .jq-selectbox__select	неактивный (недоступный для выбора) селект
+.jq-selectbox__select-text	дополнительный вложенный тег для свернутого селекта
+.jq-selectbox .placeholder	замещающий текст
+.jq-selectbox__trigger	правая часть свернутого селекта (условный переключатель)
+.jq-selectbox__trigger-arrow	вложенный тег для переключателя (стрелка)
+.jq-selectbox__dropdown	обертка для выпадающего списка
+.jq-selectbox__search	обертка для поискового поля
+.jq-selectbox__search input	поисковое поле
+.jq-selectbox__not-found	сообщение об отсутствии результатов поиска
+.jq-selectbox ul	выпадающий список
+.jq-selectbox li	пункт (опция) селекта
+.jq-selectbox li.selected	выбранный пункт селекта
+.jq-selectbox li.disabled	неактивный (недоступный для выбора) пункт селекта
+.jq-selectbox li.optgroup	заголовок для группы пунктов
+.jq-selectbox li.option
+*/
+.jq-radio { width: 25px; height: 25px; background: #7094d3; border-radius: 30px; }
+.jq-radio__div { background: #7094d3; }
+.jq-radio.checked { background-color: #ffffff; }
+.jq-radio.disabled { background: #7094d3; }
+.jq-radio.focused {  }
+.jq-radio span { background: #7094d3; }
